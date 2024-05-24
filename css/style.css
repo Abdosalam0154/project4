@@ -1,0 +1,831 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    color: #fff;
+    background-color: #D35251;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+.clr {
+    clear: both;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* ?==================>#header */
+#header {
+    background-color: #f1f1f1;
+    min-height: 100vh;
+    margin-top: 40px;
+}
+
+#header .caption {
+    margin: 0 50px 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 100px;
+}
+
+#header .caption .text,
+.image {
+    margin-top: 70px;
+}
+
+#header .caption .image  {
+    filter: drop-shadow(4px 4px 9px #00000a);
+    width: 70%;
+}
+
+#header .caption .image:hover {
+    animation: move 0.7s infinite;
+}
+
+#header .caption .text h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+    padding-bottom: 20px;
+    color: #37373F;
+}
+
+#header .caption .text p {
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 20px;
+}
+
+#header .caption .text a {
+    padding: 0px 20px;
+    border-radius: 0 50px 50px 50px;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+#header .caption .btn-group {
+    display: flex;
+}
+
+#header .caption .text .btn-book {
+    background-color: #ce1212;
+    color: #fff;
+    font-size: 15px;
+    padding-inline: 24px;
+}
+
+#header .caption .text .btn-video {
+    background-color: transparent;
+    color: #37373F;
+    font-size: 20px;
+    
+}
+#header .caption .text .btn-video .icon {
+    width: 55px;
+    height: 55px;
+    background-image: linear-gradient(to right, red 0 50%, transparent 50% 100%   );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+#header .caption .text .btn-video .icon::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: inherit;
+}
+#header .caption .text .btn-video .icon i{
+    z-index: 999;
+}
+
+#header .caption .text .btn-book:hover {
+    background-color: #E62E2D;
+    color: #fff;
+}
+
+#header .caption .text .btn-video:hover {
+    background-color: transparent;
+    color: red;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0deg) translate(1px, 1px);
+    }
+
+    10% {
+        transform: rotate(-1deg) translate(-1px, -2px);
+    }
+
+    20% {
+        transform: rotate(0deg) translate(-3px, 0px);
+    }
+
+    30% {
+        transform: rotate(1deg) translate(3px, 2px);
+    }
+
+    40% {
+        transform: rotate(0deg)translate(1px, -1px);
+    }
+
+    50% {
+        transform: rotate(-1deg) translate(-1px, 2px);
+    }
+
+    60% {
+        transform: rotate(0deg) translate(-3px, 1px);
+    }
+
+    70% {
+        transform: rotate(1deg) translate(0px, 0px);
+    }
+
+    80% {
+        transform: rotate(0deg) translate(-1px, 1px);
+    }
+
+    90% {
+        transform: rotate(-1deg) translate(1px, -2px);
+    }
+
+    100% {
+        transform: rotate(0deg) translate(3px, -1px);
+    }
+}
+
+/* ?==================>#CHEFS */
+#CHEFS {
+    padding: 80px;
+    text-align: center;
+}
+
+#CHEFS .title {
+    margin-bottom: 25px;
+}
+
+#CHEFS .title h2 {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: #797979;
+    font-weight: 400;
+}
+
+#CHEFS .title p {
+    font-size: 50px;
+    font-family: "Amatic SC", sans-serif;
+    color: #5C5E61;
+    font-weight: 500;
+}
+
+#CHEFS .title p span {
+    color: #D23534;
+}
+
+#CHEFS .cards {
+    display: flex;
+    column-gap: 28PX;
+}
+
+#CHEFS .cards .card-info {
+    transition: all 0.5s;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 5px 10px 10px #eeeeee;
+    border-radius:10px ;
+}
+#CHEFS .cards .card-info > div {
+    position: relative;
+}
+
+#CHEFS .cards .card-info svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+}
+
+#CHEFS .cards .card-info img {
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+#CHEFS .cards .card-info .text-info {
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+#CHEFS .cards .card-info .text-info h3 {
+    font-size: 19px;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 10px;
+}
+
+#CHEFS .cards .card-info .text-info span {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: #5C5E61;
+    font-weight: 400;
+}
+
+#CHEFS .cards .card-info .text-info p {
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    color: #5C5E61;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#CHEFS .cards .card-info .text-info {
+    transition: all 1s 0.5s;
+}
+
+#CHEFS .cards .card-info:hover {
+    transform: scale(1.1);
+}
+
+#CHEFS .cards .card-info .layer {
+    transform: translatex(120%);
+    position: absolute;
+    background-color: #E7E1DB;
+    top: 30px;
+    right: 10px;
+    border-radius: 10px;
+    transition: all 0.5s 0.5s;
+}
+
+#CHEFS .cards .card-info .layer ul li {
+    font-size: 20px;
+    padding: 15px;
+    color: #5C5E61;
+}
+
+#CHEFS .cards .card-info .layer ul li:hover {
+    color: #37373F;
+}
+
+#CHEFS .cards .card-info:hover .layer {
+    transform: translatex(0);
+}
+
+/* ?==================>#gallery */
+#gallery {
+    padding: 80px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+#gallery .title {
+    margin-bottom: 25px;
+}
+
+#gallery .title h2 {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: #797979;
+    font-weight: 400;
+}
+
+#gallery .title p {
+    font-size: 50px;
+    font-family: "Amatic SC", sans-serif;
+    color: #5C5E61;
+    font-weight: 500;
+}
+
+#gallery .title p span {
+    color: #D23534;
+}
+
+#gallery .gallery-image {
+    display: flex;
+    gap: 30px;
+}
+
+#gallery .gallery-image .imgs {
+    border: #fff 2px solid;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#gallery .gallery-image .item div {
+    margin-bottom: 30px;
+}
+
+#gallery .gallery-image .imgs .layer {
+    background-color: #00000a80;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.7s;
+    overflow: hidden;
+}
+
+#gallery .gallery-image .imgs .layer .caption {
+    position: absolute;  
+    top: 40%;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+#gallery .gallery-image .imgs .layer .caption h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+
+}
+
+#gallery .gallery-image .imgs .layer .caption p {
+    font-family: "Inter", sans-serif;
+}
+
+#gallery .gallery-image .imgs:hover .layer {
+    transform: translateY(0);
+
+}
+
+#gallery .gallery-image .imgs:hover .caption {
+    transform: translateY(0);
+
+}
+
+/* ?==================>#Contact */
+#contact {
+    padding: 80px;
+    text-align: center;
+}
+
+#contact .title {
+    margin-bottom: 25px;
+}
+
+#contact .title h2 {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: #797979;
+    font-weight: 400;
+}
+
+#contact .title p {
+    font-size: 50px;
+    font-family: "Amatic SC", sans-serif;
+    color: #5C5E61;
+    font-weight: 500;
+}
+
+#contact .title p span {
+    color: #D23534;
+}
+
+#contact .location {
+    margin-bottom: 25px;
+}
+
+#contact .countact-us {
+    display: flex;
+    gap: 20px;
+    /* margin-bottom: 20px; */
+
+}
+
+#contact .countact-us .address {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    margin-bottom: 20px;
+    text-align: start;
+
+
+}
+
+#contact .countact-us .details {
+    width: 100%;
+}
+
+#contact .countact-us .details span {
+    font-weight: bold;
+    color: #000000;
+}
+
+#contact .countact-us .address .icon {
+    margin-right: 10px;
+}
+
+#contact .countact-us .address i {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ce1212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contact .countact-us .details .address h3 {
+    font-family: "Inter", sans-serif;
+    color: #7D7D7D;
+    font-size: 20px;
+}
+
+#contact .countact-us .details .address p {
+    font-family: "Open Sans", sans-serif;
+    color: #7D7D7D;
+}
+#contact form {
+    box-shadow: 5px 5px 10px 10px #eeeeee;
+    padding: 20px;
+}
+#contact .form-contact input {
+    width: 95%;
+    height: 50px;
+    padding: 6px 12px;
+    border: none;
+    outline: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#contact .form-contact textarea {
+    width: 95%;
+    padding: 6px 12px;
+    border: none;
+    outline: #ccc solid 1px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#contact .form-contact .first {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#contact .form-contact .first input {
+    width: 50%;
+
+}
+
+#contact .form-contact .second input {
+    width: 100%;
+
+}
+
+#contact .form-contact .third textarea {
+    width: 100%;
+
+}
+
+#contact .form-contact :focus {
+    border: 2px solid red;
+    outline: none;
+}
+
+#contact .form-contact button {
+    padding: 12px 24px;
+    background-color: #ce1212;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+
+#contact .form-contact button:hover {
+    background-color: #E62E2D;
+}
+
+/* ?==================>#footar */
+#footer {
+    background-image: linear-gradient(to right, #000000a9, #000000a9),
+        url(../image/textured-metal-background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+#footer .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding-block: 30px;
+}
+
+#footer .about .logo {
+    display: flex;
+    align-items: center;
+}
+
+#footer .about img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+#footer .about .logo h2 {
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+
+#footer .about .logo h2::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: #ce1212;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+}
+
+#footer .about p {
+    padding-block: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#footer .about h3 {
+    font-family: "Inter", sans-serif;
+    border-bottom: #595959 solid 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#footer .about ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
+#footer .Subscribe h3 {
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#footer .Subscribe p {
+    padding-block: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#footer .Subscribe input {
+    width: 95%;
+    height: 50px;
+    padding: 6px 12px;
+    border: #ccc solid 3px;
+    border-radius: 5px;
+}
+
+#footer .Subscribe .second input {
+    width: 100%;
+}
+
+#footer .Subscribe .second {
+    display: flex;
+    gap: 10px;
+}
+
+#footer .Subscribe button {
+    padding: 0 24px;
+    background-color: #ce1212;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+#footer .Subscribe button i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#footer .Subscribe button:hover {
+    background-color: #E62E2D;
+}
+
+#footer .Quick-Links h3 {
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#footer .Quick-Links ul {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Open Sans", sans-serif;
+}
+
+#footer .Quick-Links ul li {
+    font-weight: bold;
+    transition: transform 0.5s;
+    padding: 5px;
+}
+
+#footer .Quick-Links ul li:hover {
+    background-color: #222222;
+    transform: translateX(10%);
+}
+
+#footer .contant-details h3 {
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#footer .contant-details ul li i {
+    font-size: 25px;
+    color: #ce1212;
+}
+
+#footer .contant-details ul li {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+#footer .contant-details ul li .text {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* ?==================>#navbar */
+#navbar {
+    padding: 25px 5px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar h1 {
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+
+#navbar h1::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: #ce1212;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 8px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    padding: 7px 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #808081;
+}
+
+#navbar ul li:hover {
+    color: #000000;
+}
+
+#navbar .icon {
+    font-size: 30px;
+}
+#navbar ul li a {
+    position: relative;
+}
+#navbar ul li a::before{
+    transform: translateX(0);
+    content: "";
+    background-color: red;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: all 1s;
+}
+
+#navbar ul li:hover a::before {
+    width: 100%;
+}
+
+
+#navbar .container .icon .fa-bars {
+    display: none;
+}
+@media (max-width: 768px) {
+    #navbar .container ul {
+        display: none;
+
+    }
+
+
+    #navbar .container .darks{
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        
+    }
+    #navbar .container .icon .fa-bars{
+        display: flex;
+        font-size: xx-large;
+    }
+    #navbar .container .icon .fa-moon{
+        display: flex;
+        font-size: xx-large;
+    }
+
+    #header .caption {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #header .caption .btn-group{
+        justify-content: center;
+        
+    }
+    .cards{
+        flex-direction: column;
+        gap: 30px;
+    } 
+
+    .gallery-image {
+        flex-direction: column;
+
+    }
+    #contact .countact-us {
+        gap: 0;
+    }
+    .countact-us {
+        flex-direction: column;
+        
+        }
+        #contact .countact-us .address:first-child{
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+        #contact form .first{
+            flex-direction: column;
+            
+        }
+        #contact .form-contact .first{
+            gap: 0;
+        }
+
+        #contact .form-contact .first input{
+            flex-direction: row;
+            width: 100%;
+        }
+
+        #footer .container {
+            flex-direction: column;
+        }
+}
